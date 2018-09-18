@@ -1,0 +1,6 @@
+C:\Users\ab1238800\source\repos\ExCadastroMVCAjax\GestaoPacienteService\bin\Debug\GestaoPacienteService.dll
+C:\Users\ab1238800\source\repos\ExCadastroMVCAjax\GestaoPacienteService\bin\Debug\GestaoPacienteService.pdb
+C:\Users\ab1238800\source\repos\ExCadastroMVCAjax\GestaoPacienteService\obj\Debug\GestaoPacienteService.csproj.CoreCompileInputs.cache
+C:\Users\ab1238800\source\repos\ExCadastroMVCAjax\GestaoPacienteService\obj\Debug\GestaoPacienteService.dll
+C:\Users\ab1238800\source\repos\ExCadastroMVCAjax\GestaoPacienteService\obj\Debug\GestaoPacienteService.pdb
+C:\Users\ab1238800\source\repos\ExCadastroMVCAjax\GestaoPacienteService\obj\Debug\GestaoPacienteService.csprojResolveAssemblyReference.cache

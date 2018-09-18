@@ -1,0 +1,41 @@
+﻿
+@{
+    ViewBag.Title = "Register";
+}
+
+<h3>Cadastrar Paciente</h3>
+    <form id="CriaPaciente">
+        <span id="errors"></span><br />
+        <div class="form-group">
+            <input type="text" id="txtNome" placeholder="Nome do Paciente" class="form-control" />
+        </div>
+        <div class="form-group">
+            <input type="number" id="txtIdade" placeholder="Idade do Paciente" class="form-control" />
+        </div>
+        <div class="form-group">
+                <input id="Masc" name="Sexo" type="radio" value="Masculino" />
+                <label for="Masc">Masculino</label>
+                <input id="Fem" name="Sexo" type="radio" value="Feminino" />
+                <label for="Fem">Feminino</label>
+        </div>
+        <div class="form-group">
+            <input type="text" id="txtTel" placeholder="Telefone do Paciente" class="form-control" />
+        </div>
+        <div class="form-group">
+            <input type="text" id="txtCel" placeholder="Celular do Paciente" class="form-control" />
+        </div>
+        <div class="form-group">
+            <input type="email" id="txtEmail" placeholder="Email do Paciente" class="form-control" />
+        </div>
+        <div class="form-group">
+            <input type="text" id="txtResp" placeholder="Responsavel do Paciente" class="form-control" />
+        </div>
+        <div class="form-group">
+            <button type="button" class="btn btn-info" id="btnCadastrar">Cadastrar</button>
+            <button type="reset" class="btn btn-danger">Cancelar</button>
+        </div>
+        <span id="msg"></span>
+    </form>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="~/Scripts/main.js"></script>
+
