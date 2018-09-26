@@ -1,0 +1,11 @@
+CREATE TABLE [dbo].[Pacientes] (
+    [Id]          INT           IDENTITY (1, 1) NOT NULL,
+    [Nome]        VARCHAR (120) NOT NULL,
+    [Idade]       INT           NOT NULL,
+    [Sexo]        VARCHAR (9)   NOT NULL,
+    [Telefone]    VARCHAR (10)  NOT NULL,
+    [Celular]     VARCHAR (11)  NULL,
+    [Email]       VARCHAR (120) NOT NULL,
+    [Responsavel] VARCHAR (120) NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
