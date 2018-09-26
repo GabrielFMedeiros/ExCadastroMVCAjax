@@ -1,11 +1,14 @@
-﻿
+﻿<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="~/Scripts/bootstrap.js"></script>
+<link rel="stylesheet" href="~/Content/bootstrap.min.css" />
+<link rel="stylesheet" href="~/Content/bootstrap.css" />
 @{
     ViewBag.Title = "List";
 }
 
 <h2>Listagem de Pacientes</h2>
 
-<table class="table table-bordered table-striped table-hover table-responsive">
+<table class="table table-dark table-bordered table-striped table-hover table-responsive">
     <thead>
         <th>ID</th>
         <th>Nome</th>
@@ -23,6 +26,61 @@
 
 </table>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<div class="modal fade" id="ModalEditar" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Alterar Dados do Paciente</h4>
+            </div>
+            <div class="modal-body">
+                <form id="AlteraPaciente">
+                    <span id="error"></span>
+                    <div class="form-group">
+                        <input type="text" id="id" class="form-control" disabled placeholder="Id Paciente" />
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="nome" placeholder="Nome do Paciente" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <input type="number" id="idade" placeholder="Idade do Paciente" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <input id="masculino" name="sexo" type="radio" value="Masculino" />
+                        <label for="masculino">Masculino</label>
+                        <input id="feminino" name="sexo" type="radio" value="Feminino" />
+                        <label for="feminino">Feminino</label>
+                        <span id="sexo"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="tel" placeholder="Telefone do Paciente" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="cel" placeholder="Celular do Paciente" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Email do Paciente" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="resp" placeholder="Responsavel do Paciente" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <button type="button" class="btn btn-warning" id="btnAlterar">Alterar</button>
+                        <button type="button" id="CancelarEdicao" class="btn btn-danger">Cancelar</button>
+                    </div>
+                    <span id="msg"></span>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
 <script src="~/Scripts/main.js"></script>
 
